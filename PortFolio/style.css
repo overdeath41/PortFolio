@@ -1,0 +1,187 @@
+/* Header avec boutons CV et LinkedIn */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+header .links {
+  margin-top: 0.5rem;
+}
+
+header .links a {
+  display: inline-block;
+  background-color: #ffdd57;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+header .links a:hover {
+  background-color: #ffc107;
+}
+
+/* Navbar centrée sous le header et sticky */
+.navbar {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0; /* reste collée en haut */
+  z-index: 1000; /* devant les autres éléments */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 0.3rem 0;
+  }
+}
+
+/* Section titles in blue boxes */
+section h2 {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph spacing */
+section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Tableaux et soft skills */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+table th {
+  background-color: #0077cc;
+  color: white;
+  text-align: left;
+}
+
+.soft-skills li {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+}
+
+/* Section contact cachée */
+.hidden {
+  display: none;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077cc;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .links a {
+    margin: 0.3rem 0.2rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 0.3rem 0;
+  }
+}
