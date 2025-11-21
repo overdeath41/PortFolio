@@ -3,20 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Luc Thumser</title>
+  <meta name="description" content="Luc Thumser - Administrateur Systèmes & Réseaux en alternance. Expérience Cisco, ESXi, Windows/Linux, virtualisation et sécurité IT.">
+  <meta property="og:title" content="Luc Thumser - Administrateur Systèmes & Réseaux">
+  <meta property="og:description" content="Portfolio BTS SIO SISR - Réseaux Cisco, virtualisation ESXi, administration Windows/Linux.">
+  <meta property="og:image" content="Photo_Luc_Thumser.png">
+  <meta property="og:type" content="website">
+  <title>Luc Thumser - Administrateur Systèmes & Réseaux | Portfolio BTS SIO SISR</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="header-left">
-      <img src="profil.jpg" alt="Luc Thumser" class="profile-pic">
+      <img src="Photo_Luc_Thumser.png" alt="Luc Thumser" class="profile-pic">
     </div>
     <div class="header-content">
       <h1>Luc Thumser</h1>
-      <p>Alternant BTS SIO SISR – IT Infrastructure</p>
+      <p>Administrateur Systèmes & Réseaux en alternance — Cisco, Virtualisation & Sécurité IT en environnement industriel</p>
       <div class="links">
-        <a href="CV-Luc-Thumser.pdf" class="btn-cv" download>CV</a>
+        <a href="CV_Luc_Thumser.pdf" class="btn-cv" download>CV</a>
         <a href="https://www.linkedin.com/in/lucthumser/" target="_blank" class="btn-cv">LinkedIn</a>
       </div>
     </div>
@@ -38,8 +43,8 @@
     <!-- Présentation personnelle -->
     <section id="presentation" class="fade-in">
       <h2>Présentation personnelle</h2>
-      <p>Je m'appelle Luc Thumser, étudiant en BTS SIO option SISR. J'ai déjà acquis de l'expérience en alternance dans l'IT chez Continental, où j'ai participé à des projets réseau et de virtualisation.</p>
-      <p>Je suis passionné par l'informatique, curieux et motivé pour apprendre de nouvelles technologies.</p>
+      <p>Étudiant en BTS SIO SISR en alternance chez Continental. Missions en administration réseaux et support IT en environnement industriel international</p>
+      <p>Expérience concrète sur Cisco Catalyst, virtualisation ESXi et support IT en environnement industriel</p>
     </section>
 
     <!-- Présentation BTS SIO -->
@@ -53,9 +58,9 @@
     <section id="missions" class="fade-in">
       <h2>Missions et projets</h2>
       <ul>
-        <li><strong>Continental – Alternance depuis août 2025 :</strong>
+        <li><strong>Continental – Alternance août 2025 -> Aujourd'hui :</strong>
           <ul>
-            <li>Installation et configuration de switches Cisco Catalyst</li>
+            <li>Installation et configuration d'un grand nombre de switches Cisco Catalyst</li>
             <li>Mise en place et configuration de serveurs de virtualisation ESXi</li>
             <li>Support IT interne, documentation technique, gestion des configurations</li>
           </ul>
@@ -84,11 +89,12 @@
       <h3>Techniques</h3>
       <table>
         <tr><th>Compétence</th><th>Niveau</th></tr>
-        <tr><td>Réseaux – Switches Cisco, VLAN, routage</td><td>Intermédiaire</td></tr>
-        <tr><td>Virtualisation – ESXi, gestion VM</td><td>Intermédiaire</td></tr>
-        <tr><td>Administration systèmes – Windows/Linux</td><td>Intermédiaire</td></tr>
-        <tr><td>Langages – Python, HTML, CSS, JavaScript</td><td>Débutant/Intermédiaire</td></tr>
+        <tr><td>Réseaux – Switches Cisco, VLAN, routage</td><td>Intermédiaire (VLAN, routage statique, trunking, spanning tree)</td></tr>
+        <tr><td>Virtualisation – ESXi, gestion VM</td><td>déploiement ESXi 8.0, création/gestion VM</td></tr>
+        <tr><td>Administration systèmes – Windows/Linux</td><td>gestion utilisateurs, Apache/Nginx, SSH</td></tr>
+        <tr><td>Programmation – Python, HTML, CSS, JavaScript</td><td>Débutant : Script d'automatisations simples </td></tr>
       </table>
+      <!-- Compétences -->
       <h3>Soft Skills</h3>
       <ul class="soft-skills">
         <li>Organisation</li>
@@ -101,16 +107,30 @@
     </section>
 
     <!-- Page de contact -->
-    <section id="contact" class="fade-in hidden">
+    <section id="contact" class="fade-in">
       <h2>Contact</h2>
-      <p>Pour me contacter, envoyez-moi un email à : <a href="mailto:lucthumser04@gmail.com">lucthumser04@gmail.com</a></p>
+      <p>Intéressé par mon profil ? N’hésitez pas à me contacter :</p>
+
+      <!-- Coordonnées directes -->
+      <p>
+        📧 <a href="mailto:lucthumser04@gmail.com">lucthumser04@gmail.com</a><br>
+        💻 <a href="https://github.com/overdeath41" target="_blank">GitHub</a>
+      </p>
+
+      <!-- Formulaire de contact -->
+      <form action="mailto:lucthumser04@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
-  </main>
-
+  <!-- Copyright tag -->
   <footer>
-    © 2025 Luc Thumser. Tous droits réservés.
+    <p>© <span id="year"></span> Luc Thumser. Tous droits réservés.</p>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </footer>
-
+  <!-- Lien vers le fichier javascript de la page -->
   <script src="script.js"></script>
 </body>
 </html>
