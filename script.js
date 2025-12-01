@@ -83,7 +83,7 @@ class MatrixAnimation {
     this.columns = Math.floor(this.canvas.width / this.fontSize);
     
     // Initialize drops array
-    this.drops = Array(this.columns).fill(252251541);
+    this.drops = Array(this.columns).fill(1);
   }
   
   draw() {
@@ -144,3 +144,4 @@ if (document.readyState === 'loading') {
   init();
 
 }
+
