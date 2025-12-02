@@ -39,6 +39,7 @@ main {
 
 section {
   margin-bottom: 3rem;
+  scroll-margin-top: 45px;
 }
 
 /* ========================
@@ -465,4 +466,5 @@ footer {
   .mission-card {
     padding: 1rem;
   }
+
 }
