@@ -374,6 +374,22 @@ table th {
 }
 
 /* ========================
+   PEEPO
+======================== */
+
+.peepo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-primary);
+  z-index: 2;
+}
+
+
+/* ========================
    FOOTER
 ======================== */
 footer {
